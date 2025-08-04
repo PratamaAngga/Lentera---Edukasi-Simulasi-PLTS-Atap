@@ -1,6 +1,5 @@
 .footer {
-  background-color: #456c3f;
-  color: white;
+  background-color: #527853;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -17,6 +16,7 @@
 .footer-column {
   flex: 1 1 200px;
   min-width: 200px;
+  color: white;
 }
 
 .footer-logo {
@@ -59,6 +59,7 @@
 .social-icons img {
   width: 24px;
   height: 24px;
+  color: #FFFFFF;
 }
 
 .subscribe-form {
@@ -86,4 +87,15 @@
 
 .subscribe-form button:hover {
   background-color: #e0e0e0;
+}
+
+.footer-decoration {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-decoration img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
