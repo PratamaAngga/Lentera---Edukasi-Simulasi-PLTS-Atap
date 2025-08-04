@@ -8,6 +8,7 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+  color: #235842;
 }
 
 h1 {
@@ -52,7 +53,7 @@ h1 {
 
 .step h3 {
   margin: 0;
-  color: #005d4b;
+  color: #235842;
 }
 
 .step p {
