@@ -12,8 +12,10 @@ body {
 }
 
 h1 {
-  text-align: center;
-  color: #1e463c;
+  text-align: left;
+  color: #235842;
+  margin-bottom: 30px;
+  margin-top: 0; /* Menghindari jarak atas berlebih */
 }
 
 .content {
@@ -24,8 +26,8 @@ h1 {
 }
 
 .image-section {
-    flex: 2; 
-    max-width: 50%;
+  flex: 2;
+  max-width: 50%;
 }
 
 .image-section img {
@@ -59,14 +61,14 @@ h1 {
 .step p {
   margin-top: 5px;
   font-size: 0.95rem;
-  color: #333;
+  color: #575757;
 }
 
 .icon-circle {
-  background-color: #2E7D32;   
-  border-radius: 50%;          
-  padding: 10px;               
-  width: 40px;                 
+  background-color: #235842;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
   height: 40px;
-  object-fit: contain;         
+  object-fit: contain;
 }
