@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.sdgs-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sdgs-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.highlight-orange {
+  color: #f68c1f; /* Warna oranye sinar matahari */
+}
+
+.highlight-red {
+  color: #ef5350; /* Warna langkah */
+}
+
+.highlight-sdgs {
+  color: #007acc; /* Warna biru SDGs */
+}
+
+.sdgs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.sdg-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.sdg-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sdg-logo img {
+  width: 120px;
+  margin-bottom: 8px;
+}
+
+.see-all {
+  font-size: 14px;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
