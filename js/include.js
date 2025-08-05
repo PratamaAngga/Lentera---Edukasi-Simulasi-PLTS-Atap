@@ -35,6 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       document.getElementById("hero").innerHTML = data;
     });
+
+  // Load cara kerja
+  fetch("cobaCaraKerja.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("caraKerja").innerHTML = data;
+    });
+
+  // Load alasan
 });
 
 window.addEventListener("scroll", function () {
