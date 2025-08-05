@@ -46,6 +46,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load alasan
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const comment = document.querySelector(".comment"); // jika hanya satu komentar
+
+  const replyToggle = comment.querySelector(".icon-reply span");
+  const replySection = comment.querySelector(".reply");
+  const chevron = replyToggle.querySelector(".chevron");
+  const iconReply = comment.querySelector(".icon-reply");
+
+  // Awal: Sembunyikan reply dan ganti chevron
+  replySection.style.display = "none";
+  chevron.src = "assets/icon/chevron-down.png";
+
+  // Event klik
+  replyToggle.addEventListener("click", function () {
+    const isVisible = replySection.style.display === "block";
+
+    // Toggle tampilan
+    replySection.style.display = isVisible ? "none" : "block";
+
+    // Ganti chevron icon
+    chevron.src = isVisible
+      ? "assets/icon/chevron-down.png"
+      : "assets/icon/chevron-up.png";
+
+    // Toggle margin bottom
+    iconReply.style.marginBottom = isVisible ? "0" : "36px";
+  });
+});
+
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 10) {

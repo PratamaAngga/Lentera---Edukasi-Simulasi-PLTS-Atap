@@ -105,7 +105,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('img/banner.png');
+  background-image: url('img/bg-pattern.png');
   background-repeat: no-repeat;
   flex-direction: column;
   text-align: center;
@@ -168,24 +168,66 @@ main {
   display: block;
 }
 
+.comment {
+  margin-left: 100px;
+  width: calc(100% - 200px);
+  border-radius: 16px;
+  border: 3px solid #EE7214;
+  padding: 25px 50px;
+  margin-bottom: 20px;
+}
+
 .comment-header {
   display: flex;
   align-items: center;
-  gap: 0.5em;
-  margin-bottom: 0.5em;
+  gap: 20px;
+  margin-bottom: 9px;
 }
 
 .avatar {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #ccc;
+  border: none;
 }
 
 .username {
-  font-weight: bold;
-  color: #333;
+  font-weight: 500;
+  color: #000;
+  font-size: 20px;
+}
+
+.comment-body {
+  margin-left: 68px;
+}
+
+.comment-body p {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.icon-reply {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-reply button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-reply span {
+  font-size: 1em;
+  color: #EE7214;
+  cursor: pointer;
+}
+
+.icon-reply span img {
+  margin-left: 12px;
 }
 
 .footer {
