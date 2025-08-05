@@ -12,7 +12,7 @@ body {
 .sdgs-text h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #235842;
   margin-bottom: 40px;
   line-height: 1.5;
 }
@@ -22,11 +22,11 @@ body {
 }
 
 .highlight-red {
-  color: #ef5350; /* Warna langkah */
+  color: #f68c1f; /* Warna langkah */
 }
 
 .highlight-sdgs {
-  color: #007acc; /* Warna biru SDGs */
+  color: #f68c1f; /* Warna biru SDGs */
 }
 
 .sdgs-grid {
@@ -38,7 +38,7 @@ body {
 }
 
 .sdg-item img {
-  width: 150px;
+  width: 1200px;
   height: auto;
   border-radius: 4px;
 }
