@@ -23,10 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Load Footer
-  fetch("components/footer.html")
+  fetch("footer.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
+    });
+
+  // Load hero
+  fetch("hero.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("hero").innerHTML = data;
     });
 });
 

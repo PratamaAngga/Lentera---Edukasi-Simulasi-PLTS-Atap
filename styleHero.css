@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url(./assets/img/banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container{
+  position: relative;
+  width: 50%;
+  margin-left: 90px;
+}
+
+.hero .container .hero-text{
+  position: relative;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+.hero .container img{
+  position: absolute;
+  margin: -290px -200px;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.hero .container h1{
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 53px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+
+.hero .container h1 span{
+  color: #F7B787;
+}
+
+.hero .container p{
+  margin-top: 20px;
+  color: #fff;
+  width: 70%;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.hero .container .hero-text .button{
+   display: inline-block; 
+  color: #fff;
+  text-decoration: none;
+  /* margin-top: 0px; */
+  background: #EE7214;
+  padding: 11px 35px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+.hero .container .hero-text .button:hover{
+  transform: scale(1.1);
+  
+}
+
+.mitosFakta{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 30px auto;
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  /* padding: 10%; */
+}
+.mitosFakta h2{
+  color: #EE7214;
+  font-size: 2rem;
+}
+.mitosFakta .desc{
+  margin-bottom: 30px;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.card .card-mitos{
+  border: 2px solid #EE7214;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.card-toggle i{
+  padding: 5px 6px;
+  background-color: #EE7214;
+  color: #ffff;
+  border-radius: 55px;
+}
+.card .card-mitos p{
+  text-align: left;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #575757;
+}
+.card .card-fakta{
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  transition: max-height .3s ease-in-out;
+}
+.card.active .card-fakta{
+  max-height: 300px;
+}
+.card .card-fakta p{
+  background-color: #235842;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+}
