@@ -100,7 +100,7 @@ main {
 
 .banner {
   margin-left: 100px;
-  width: 1720px;
+  width: calc(100% - 200px);
   height: 227px;
   display: flex;
   align-items: center;
@@ -158,6 +158,16 @@ main {
   border: none;
   border-radius: 1px;
   background-color: #527853;
+}
+
+.line {
+  width: calc(100% - 100px);
+  margin-left: 50px;
+  margin-bottom: 70px;
+  height: 2px;
+  border: none;
+  border-radius: 1px;
+  background-color: #ee7214;
 }
 
 #diskusi {
@@ -389,6 +399,12 @@ main {
   height: 24px;
   border-radius: 0%;
   border: none;
+}
+
+/* halaman simulasi */
+.content-simulasi {
+  margin-left: 210px;
+  width: calc(100% -  420px);
 }
 
 .footer {
