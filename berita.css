@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+.berita{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 20px;
+}
+.berita h1{
+    margin-bottom: 8px;
+    color: #235842;
+}
+.berita p{
+    margin-bottom: 40px;
+    color: #575757;
+    font-weight: 700;
+}
+.grid{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: -20px;
+}
+.grid-1, .grid-2{
+    /* gap: 10px; */
+    /* display: table-column; */
+    gap: 10px;
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.2s;
+    cursor: pointer;
+    height: 260px;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-info{
+    padding: 5px;
+}
+.card-info h3{
+    font-size: 15px;
+}
+.card-info .date{
+    font-size: 12px;
+    padding-top: 10px;
+}
+.card.highlight{
+    max-width: 200px;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.highlight:hover{
+    transform: scale(1.01);
+}
+.highlight img{
+    max-width: 440px;
+}
+.highlight .card-info{
+    position: absolute;
+    text-align: left;
+    align-items: self-start;
+    justify-content: start;
+    margin-top: 160%;
+    margin-left: -110px;
+    color: #fff;
+}
+.berita button{
+    background-color: #EE7214;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 70px;
+    font-size: 1em;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: -40px;
+}
+.berita button:hover{
+    transform: scale(1.05);
+}
