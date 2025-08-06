@@ -475,6 +475,83 @@ main {
   max-width: 480px;
 }
 
+.btn-simulasi {
+  padding: 18px;
+  background-color: #ee7214;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 37px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.hasil-simulasi {
+  width: calc(100% - 360px);
+  margin-bottom: 150px;
+  margin-left: 180px;
+  display: none;
+}
+
+.judul-hasil {
+  padding: 26px 0;
+  border-top: 1px solid #ee7214;
+  border-bottom: 1px solid #ee7214;
+  width: 1000px;
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.hasil {
+  padding: 54px 64px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12.5px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 52px;
+  display: flex;
+}
+
+.wrapper-hasil {
+  background-color: #235842;
+  border: none;
+  border-right: 1px solid white;
+  flex: 1;
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper-hasil:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.wrapper-hasil:last-child {
+  border-radius: 0 20px 20px 0;
+  border: none;
+}
+
+.wrapper-hasil span {
+  font-size: 38px;
+  font-weight: bold;
+  color: #D5F173;
+}
+
+.wrapper-hasil p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
 .footer {
   background-color: #222;
   color: #ccc;
