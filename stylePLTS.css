@@ -1,6 +1,12 @@
 .alasanPlts{
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+<<<<<<< HEAD
+=======
+  background-color: #527853;
+  background-image: url('assets/img/background\ cara\ kerja.png');
+  background-size: cover;
+>>>>>>> 4a2041f446a5a2bad2ab7208d67e8140010493cb
   color: white;
 }
 .alasanPlts {
@@ -25,12 +31,10 @@
 .container h1 {
   font-size: 30px;
   color: #D5F173;
-  margin-bottom: 10px;
   text-align: center;
 }
 .subtitle {
   font-size: 20px;
-  margin-bottom: 30px;
   text-align: center;
   color: #fff;
 }
@@ -45,6 +49,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-right: 30px; 
+  padding-left: 50px;
 }
 .benefits .card {
   background-color: rgba(255, 255, 255, 0.15);
@@ -64,6 +70,8 @@
 .illustration {
   flex: 1 1 35%;
   text-align: right;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 .illustration img {
   width: 200%;
