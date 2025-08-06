@@ -1,7 +1,7 @@
-body {
+.alasanPlts {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #527853;
+  background: #527853;
   color: white;
 }
 
@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 
-h1 {
+.container h1 {
   font-size: 30px;
   color: #D5F173;
   margin-bottom: 10px;

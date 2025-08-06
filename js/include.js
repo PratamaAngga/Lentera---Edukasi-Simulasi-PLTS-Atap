@@ -43,6 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("caraKerja").innerHTML = data;
     });
 
+  // Load alasan plts
+  fetch("kenapaPLTS.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("alasanPlts").innerHTML = data;
+    });
+
   // Load Mitos fakta
   fetch("mitosFakta.html")
     .then((res) => res.text())
