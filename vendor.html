@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="vendor.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body data-page="vendor">
     <div id="navbar"></div>
 
     <div class="vendor">
-        <div class="banner">
-            <img src="assets/img/banner.png" alt="banner" >
+        <div id="banner">
         </div>
         <div class="line"></div>
         <div class="grid">
@@ -202,6 +202,17 @@
     </div>
 
 <script src="js/include.js"></script>
+<script>
+    setTimeout(() => {
+        const h1 = document.querySelector("#banner .banner h1");
+        const p = document.querySelector("#banner .banner p");
+
+        if (h1 && p) {
+        h1.textContent = "Temukan Vendormu Disini";
+        p.textContent = "Temukan penyedia solar panel yang cocok untukmu dan wujudkan rumah hemat energi!";
+        }
+    }, 100);
+</script>
 
 </body>
 </html>
