@@ -405,6 +405,74 @@ main {
 .content-simulasi {
   margin-left: 210px;
   width: calc(100% -  420px);
+  margin-bottom: 78px;
+}
+
+.wrapper {
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.simulasi-header {
+  display: inline-block;
+  padding: 8px 100px 8px 20px;
+  border: none;
+  border-bottom: 2px solid #ee7214;
+}
+
+.simulasi-header h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dropdown-kota {
+  width: 100%;
+  margin: 30px 0 16px 20px;
+  display: block;
+  padding: 24px;
+  color: #868e96;
+  border: 1px solid #527853;
+  border-radius: 20px;
+  font-size: 1em;
+  appearance: none;
+  background-image: url("icon/chevron-down-secondary.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dropdown-kota:focus {
+  outline: none;
+  border-color: #527853;
+}
+
+.simulasi-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 27px;
+}
+
+.wrapper input {
+  display: block;
+  width: 100%;
+  margin: 30px 0 16px 20px;
+  padding: 24px;
+  border: 1px solid #527853;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+.wrapper input:focus {
+  outline: none;
+  border: 1px solid #527853;
+}
+
+.wrapper p {
+  font-size: 1em;
+  color: #DC3545;
+  max-width: 480px;
 }
 
 .footer {
