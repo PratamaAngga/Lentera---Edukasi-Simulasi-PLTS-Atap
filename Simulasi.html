@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentera - Simulasi</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="simulasi">
+    <div id="navbar"></div>
+
+    <main>
+        <div id="banner"></div>
+        <div class="line"></div>
+        <div class="content-simulasi">
+            <div class="wrapper">
+                <div class="simulasi-header">
+                    <h2>Pilih Kota Tempat Tinggal</h2>
+                </div>
+                <select class="dropdown-kota" id="kota">
+                    <option value="" disabled selected hidden>Pilih kotamu disini...</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="bandung">Malang</option>
+                    <option value="yogyakarta">Bali</option>
+                    <option value="yogyakarta">Semarang</option>
+                    <option value="yogyakarta">Batam</option>
+                </select>
+                <p>*Pilih kota terdekat dengan kotamu jika tidak ada di daftar</p>
+            </div>
+            <div class="simulasi-wrapper">
+                <div class="wrapper">
+                    <div class="simulasi-header"></div>
+                    <input type="text">
+                    <p></p>
+                </div>
+                <div class="wrapper">
+                    <div class="simulasi-header"></div>
+                    <input type="text">
+                </div>
+            </div>
+            <button></button>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/include.js"></script>
+    <script>
+        setTimeout(() => {
+            const h1 = document.querySelector("#banner .banner h1");
+            const p = document.querySelector("#banner .banner p");
+
+            if (h1 && p) {
+            h1.textContent = "Simulasikan Hematmu";
+            p.textContent = "Lihat berapa banyak cahaya matahari bisa gantikan listrikmu, plus estimasi biaya dan dampak lingkungannya.";
+            }
+        }, 100);
+
+        const dropdown = document.getElementById("kota");
+
+            dropdown.addEventListener("change", function () {
+            if (this.value) {
+                this.style.color = "black";
+            }
+        });
+    </script>
+</body>
+</html>
