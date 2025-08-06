@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+.mitosFakta{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 30px auto;
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  /* padding: 10%; */
+}
+.mitosFakta h2{
+  color: #EE7214;
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+.mitosFakta .desc{
+  margin-bottom: 30px;
+  color: #575757;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0px; */
+}
+.card .card-mitos{
+  border: 2px solid #EE7214;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  padding: 5px 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.card-mitos span{
+  font-weight: 700;
+}
+.card-toggle i{
+  padding: 5px 6px;
+  background-color: #EE7214;
+  color: #ffff;
+  border-radius: 55px;
+}
+.card .card-mitos p{
+  text-align: left;
+  font-size: 1em;
+  font-weight: 600;
+  color: #575757;
+}
+.card .card-fakta{
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  /* padding: 10px 0px; */
+  padding: 0px 15px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+.card.active .card-fakta{
+  max-height: 300px;
+  margin-top: 0px;
+  padding: 0px 15px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+.card .card-fakta p{
+  /* background-color: #235842; */
+  color: #fff;
+  /* padding: 5px 15px; */
+  text-align: left;
+  width: 100%;
+  font-size: 0.95em;
+}
+.card.active{
+  background-color: #235842;
+  border-radius: 15px;
+  gap: 10px;
+  transition: all .5s ease-out;
+  margin: 8px 0;
+}
+.card.active .card-mitos{
+  border: none;
+}
+.card.active .card-mitos p{
+  color: #F9E8D9;
+}
+.card.active .card-mitos .card-toggle{
+  transform: rotate(180deg);
+  color: #EE7214;
+  /* background-color: #fff; */
+    transition: all .3s ease;
+
+}
