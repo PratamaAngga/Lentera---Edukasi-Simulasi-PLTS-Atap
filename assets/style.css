@@ -60,7 +60,7 @@
 }
 
 .nav-links a.active {
-  border-bottom: 3px solid #EE7214;
+  border-bottom: 3px solid #ee7214;
 }
 
 .search-bar {
@@ -71,24 +71,24 @@
   padding: 10px 30px 10px 16px;
   color: #000;
   font-size: 1em;
-  border: 1px solid #868E96;
+  border: 1px solid #868e96;
   border-right: none;
   border-radius: 12px 0 0 12px;
 }
 
 .search-bar input::placeholder {
-  color: #868E96;
+  color: #868e96;
 }
 
 .search-bar input:focus {
-  border: 1px solid #868E96;
+  border: 1px solid #868e96;
   outline: none;
   border-right: none;
 }
 
 .search-button {
   padding: 10px;
-  background-color: #EE7214;
+  background-color: #ee7214;
   border: none;
   border-radius: 0 12px 12px 0;
   cursor: pointer;
@@ -105,7 +105,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('img/bg-pattern.png');
+  background-image: url("img/bg-pattern.png");
   background-repeat: no-repeat;
   flex-direction: column;
   text-align: center;
@@ -148,7 +148,7 @@ main {
 }
 
 .forum-tabs .tab.active {
-  border-bottom: 4px solid #EE7214;
+  border-bottom: 4px solid #ee7214;
 }
 
 .line-pemisah {
@@ -158,6 +158,29 @@ main {
   border: none;
   border-radius: 1px;
   background-color: #527853;
+}
+
+#diskusi {
+  position: relative;
+  height: 500px;
+  overflow: hidden; /* agar yang fixed di dalamnya tidak ikut ke-scroll */
+  margin-bottom: 150px;
+}
+
+#testimoni {
+  position: relative;
+  height: 500px;
+  overflow: hidden; /* agar yang fixed di dalamnya tidak ikut ke-scroll */
+  margin-bottom: 150px;
+}
+
+/* Tempat scroll-nya hanya komentar */
+.comments-wrapper {
+  height: calc(100% - 86px); /* 70px = tinggi question-box */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding-bottom: 30px;
 }
 
 .tab-content {
@@ -172,7 +195,7 @@ main {
   margin-left: 100px;
   width: calc(100% - 200px);
   border-radius: 16px;
-  border: 3px solid #EE7214;
+  border: 3px solid #ee7214;
   padding: 25px 50px;
   margin-bottom: 20px;
 }
@@ -222,12 +245,150 @@ main {
 
 .icon-reply span {
   font-size: 1em;
-  color: #EE7214;
+  color: #ee7214;
   cursor: pointer;
 }
 
 .icon-reply span img {
   margin-left: 12px;
+}
+
+.testi {
+  margin-left: 100px;
+  width: calc(100% - 200px);
+  border-radius: 16px;
+  border: 3px solid #ee7214;
+  padding: 25px 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.testi-content {
+  width: 100%;
+}
+
+.testi-like {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ee7214;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.question-box {
+  margin-left: 75px;
+  width: calc(100% - 150px);
+  border-radius: 20px;
+  border: 3px solid #527853;
+  padding: 16px 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.question-box img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+.question-box button {
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #ee7214;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-box input {
+  color: #000;
+  font-size: 1em;
+  margin-left: 20px;
+  border: none;
+  width: 100%;
+}
+
+.question-box input::placeholder {
+  color: #868e96;
+}
+
+.question-box input:focus {
+  border: 1px solid #868e96;
+  outline: none;
+  border: none;
+}
+
+.question-box button img {
+  width: 24px;
+  height: 24px;
+  border-radius: 0%;
+  border: none;
+}
+
+.make-testimoni {
+  margin-left: 75px;
+  width: calc(100% - 150px);
+  border-radius: 20px;
+  border: 3px solid #527853;
+  padding: 16px 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.make-testimoni img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+.make-testimoni button {
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #ee7214;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-testimoni input {
+  color: #000;
+  font-size: 1em;
+  margin-left: 20px;
+  border: none;
+  width: 100%;
+}
+
+.make-testimoni input::placeholder {
+  color: #868e96;
+}
+
+.make-testimoni input:focus {
+  border: 1px solid #868e96;
+  outline: none;
+  border: none;
+}
+
+.make-testimoni button img {
+  width: 24px;
+  height: 24px;
+  border-radius: 0%;
+  border: none;
 }
 
 .footer {
