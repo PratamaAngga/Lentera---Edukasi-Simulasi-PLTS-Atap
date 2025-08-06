@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  background: url(./assets/img/banner.png) no-repeat;
+  background: url(./assets/img/banner-homepage.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
