@@ -1,7 +1,12 @@
+.Footer{
+  box-sizing: border-box;
+  margin: 0;
+}
 .footer {
   background-color: #527853;
-  padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+
 }
 
 .footer-container {
@@ -11,12 +16,15 @@
   max-width: 1200px;
   margin: auto;
   gap: 30px;
+  margin-bottom: 50px;
+  padding: 30px 10px;
 }
 
 .footer-column {
   flex: 1 1 200px;
   min-width: 200px;
   color: white;
+  text-align: left;
 }
 
 .footer-logo {
@@ -27,20 +35,33 @@
 .footer-desc {
   font-size: 14px;
   line-height: 1.4;
+  font-weight: 600;
+  width: 80%;
 }
 
-.footer-column h4 {
-  font-size: 16px;
+.footer-column .judul h4 {
+  font-size: 20px;
   margin-bottom: 10px;
+}
+.footer-column .judul{
+  display: flex;
+  /* align-items: center; */
+  text-align: center;
+  gap: 8px;
+}
+.footer-column .judul i{
+  font-size: 22px;
+  margin-top: 4px;
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
+  margin-left: 37px;
 }
 
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .footer-column ul li a {
@@ -51,9 +72,27 @@
 .footer-column ul li a:hover {
   text-decoration: underline;
 }
-
-.social-icons a {
+.desc{
+  margin-left: 38px;
+}
+.desc p{
+  margin-bottom: 5px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
   margin-right: 10px;
+  color: #FFFFFF;
+}
+.social-icons .fab{
+  padding: 4px 8px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+}
+.social-icons .fab:hover{
+  color: #235842;
 }
 
 .social-icons img {
@@ -62,27 +101,43 @@
   color: #FFFFFF;
 }
 
-.subscribe-form {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 10px;
+.footer-column .sentence{
+  width: 120%;
+  margin-left: -50px;
+  margin-bottom: 20px;
 }
 
-.subscribe-form input[type="email"] {
+.subscribe-form {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  border-radius: 100px;
+  padding: 0.5rem;
+  margin-left: -50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: max-content;
+}
+
+.subscribe-form .email-input {
   flex: 1;
-  padding: 8px 12px;
+  padding: 0.45rem 1rem;
   border: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1rem;
 }
 
 .subscribe-form button {
-  padding: 8px 16px;
-  background-color: white;
-  color: #456c3f;
+  padding: 0.45rem 1rem;
+  color: white;
+  background-color: #456c3f;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 100px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .subscribe-form button:hover {
@@ -92,10 +147,13 @@
 .footer-decoration {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-decoration img {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0;
+  padding: 0;
 }
