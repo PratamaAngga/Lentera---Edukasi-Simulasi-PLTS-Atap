@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("caraKerja").innerHTML = data;
     });
 
+  // Load Mitos fakta
+  fetch("mitosFakta.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("MitosFakta").innerHTML = data;
+    includeHtml();
+    });
+
   // Load alasan
 });
 
@@ -53,4 +61,21 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("scrolled");
   }
+});
+
+// mitos fakta
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  const mitos = card.querySelector(".card-mitos");
+  const arrow = card.querySelector(".arrow-toggle");
+
+  mitos.addEventListener("click", () => {
+    
+    card.classList.toggle("active");
+
+    if (arrow) {
+      arrow.classList.toggle("rotate");
+    }
+  });
 });
