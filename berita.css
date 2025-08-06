@@ -49,7 +49,6 @@
     cursor: pointer;
     height: 260px;
 }
-
 .card:hover{
     transform: translateY(-4px);
 }
