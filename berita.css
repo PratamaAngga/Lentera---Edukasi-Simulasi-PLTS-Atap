@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: center;
 }
-.card {
+.card-berita {
     border-radius: 12px;
     overflow: hidden;
     width: 40%;
@@ -51,10 +51,10 @@
     transition: transform 0.2s;
     cursor: pointer;
 }
-.card:hover{
+.card-berita:hover{
     transform: translateY(-4px);
 }
-.card img{
+.card-berita img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -63,13 +63,17 @@
     padding: 5px;
 }
 .card-info h3{
-    font-size: 15px;
+    font-size: 1.5em;
+    padding: -10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
 }
 .card-info .date{
-    font-size: 12px;
-    padding-top: 10px;
+    font-size: 18px;
+    padding-top: 19px;
+    margin-top: 20px;
 }
-.card.highlight{
+.card-berita.highlight{
     max-width: 200px;
     color: white;
     width: 100%;
