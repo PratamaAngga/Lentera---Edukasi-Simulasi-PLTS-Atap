@@ -86,13 +86,16 @@
   color: #FFFFFF;
 }
 .social-icons .fab{
-  padding: 4px 8px;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  border-radius: 50px;
-}
-.social-icons .fab:hover{
-  color: #235842;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #235842;
+  color: white;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .social-icons img {
