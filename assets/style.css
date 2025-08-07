@@ -479,6 +479,11 @@ main {
   border-radius: 37px;
   margin-top: 28px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-simulasi:hover {
+  transform: scale(1.05);
 }
 
 .hasil-simulasi {
@@ -749,25 +754,29 @@ main {
 /* pengertian */
 .pengertian-container{
   display: flex;
-  margin: 150px 90px 0px 90px;
-  gap: 80px;
+  margin: 350px 50px 0;
+  width: calc(100% - 100px);
+  justify-content: space-between;
 }
 .grid-kiri{
   background-color: #527853;
   color: #fff;
-  padding: 70px 35px 50px 35px;
-  border-radius: 80px 20px 80px 20px;
-  width: 50%;
-  max-height: 400px;
-  margin: auto;
+  padding: 116px 116px 100px;
+  border-radius: 150px 30px 150px 30px;
+  max-width: 900px;
+  max-height: 630px;
 }
 .grid-kiri h1{
   margin-bottom: 20px;
   color: #D5F173;
-  font-size: 2.3em;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
 }
 .grid-kiri p{
-  font-size: 1.1em;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 .line-GRID{
   color: #D5F173;
@@ -777,7 +786,8 @@ main {
   margin-top: 20px;
 }
 .grid-kanan img{
-  max-width: 450px;
+  max-width: 750px;
+  max-height: 750px;
 }
 
 
@@ -877,30 +887,21 @@ main {
 }
 
 /* caraKerja */
-.carakerja{
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
 .caraKerja {
   padding: 90px 40px;
-  margin-top: 50px;
-  max-width: 1200px;
-  margin: auto;
-  color: #235842;
+  width: 100%;
 }
 .caraKerja h1 {
-  text-align: left;
   color: #235842;
   margin-bottom: 60px;
-  margin-left: -25px;
-  margin-top: 0; /* Menghindari jarak atas berlebih */
+  font-size: 48px;
+  font-weight: bold;
 }
 .content {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: flex-start;
-  margin-left: -25px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
 }
 .image-section {
   flex: 2;
@@ -908,7 +909,6 @@ main {
 }
 .image-section img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px #ccc;
 }
@@ -918,20 +918,21 @@ main {
 .step {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 25px;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 .step img {
-  width: 50px;
+  width: 96px;
   height: auto;
 }
 .step h3 {
-  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
   color: #235842;
 }
 .step p {
   margin-top: 5px;
-  font-size: 0.95rem;
+  font-size: 20px;
   color: #575757;
 }
 .icon-circle {
@@ -947,18 +948,13 @@ main {
 .alasanPlts {
   background-color: #527853;
   margin-bottom: 50px;
-  padding-bottom: 10px;
-  /* background-image: url(./img/pattern.png);
-   background-size: cover;
-  background-position: center;
-  align-items: center;bac */
+  background-image: url("img/pattern-alasan.png");
+  background-repeat: no-repeat;
+  width: 100%;
 }
 .kenapaPlts{
-  padding: 70px 20px;
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 50px;
-  background-color: #527853;
+  padding: 75px 90px;
+  width: 100%;
 }
 .judulPlts{
   text-align: center;
@@ -966,16 +962,15 @@ main {
 }
 .judulPlts h1{
   color: #D5F173;
-}
-.kenapaPlts h1 {
-  font-size: 30px;
-  color: #D5F173;
+  font-weight: bold;
+  font-size: 48px;
   margin-bottom: 10px;
   text-align: center;
 }
 .subtitle {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 100px;
   text-align: center;
   color: #fff;
 }
@@ -983,35 +978,35 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: flex-start;
-  /* border: 5px solid red; */
+  align-items: center;
 }
 .benefits {
   flex: 1 1 40%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   width: 400px;
-  /* border: 3px solid red; */
 }
 .benefits .card {
   background-color: rgba(255, 255, 255, 0.15);
-  padding: 13px 10px;
-  border-radius: 10px;
+  padding: 40px;
+  border-radius: 24px;
   color: white;
   backdrop-filter: blur(2px);
   box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
   border: 2px solid #fff;
-  /* border: 3px solid red; */
-  height: 120px;
   width: 100%;
   
 }
 .benefits .card h2 {
   color: #F9E8D9;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 36px;
+}
+
+.benefits .card p {
+  font-size: 24px;
 }
 .illustration {
   flex: 1 1 35%;
@@ -1019,7 +1014,6 @@ main {
 }
 .illustration img {
   width: 100%;
-  max-width: 480px;
 }
 
 

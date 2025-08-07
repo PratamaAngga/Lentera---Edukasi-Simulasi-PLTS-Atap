@@ -28,8 +28,8 @@
 }
 
 .footer-logo {
-  width: 100px;
-  margin-bottom: 10px;
+  width: 100%;
+  margin: -10% 0 -15% -30%;
 }
 
 .footer-desc {
@@ -45,7 +45,7 @@
 }
 .footer-column .judul{
   display: flex;
-  /* align-items: center; */
+  margin: 0;
   text-align: center;
   gap: 8px;
 }
