@@ -479,6 +479,11 @@ main {
   border-radius: 37px;
   margin-top: 28px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-simulasi:hover {
+  transform: scale(1.05);
 }
 
 .hasil-simulasi {
@@ -749,25 +754,29 @@ main {
 /* pengertian */
 .pengertian-container{
   display: flex;
-  margin: 350px 90px 0px 90px;
-  gap: 0px;
+  margin: 350px 50px 0;
+  width: calc(100% - 100px);
+  justify-content: space-between;
 }
 .grid-kiri{
   background-color: #527853;
   color: #fff;
-  padding: 70px 35px 50px 35px;
-  border-radius: 80px 20px 80px 20px;
-  width: 45%;
-  max-height: 400px;
-  margin: auto;
+  padding: 116px 116px 100px;
+  border-radius: 150px 30px 150px 30px;
+  max-width: 900px;
+  max-height: 630px;
 }
 .grid-kiri h1{
   margin-bottom: 20px;
   color: #D5F173;
-  font-size: 2.2em;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
 }
 .grid-kiri p{
-  font-size: 1.3em;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 .line-GRID{
   color: #D5F173;
@@ -777,7 +786,8 @@ main {
   margin-top: 30px;
 }
 .grid-kanan img{
-  max-width: 450px;
+  max-width: 750px;
+  max-height: 750px;
 }
 .infografis {
   width: calc(100% - 360px);
@@ -788,135 +798,108 @@ main {
 }
 
 /* mitosFakta */
-.mitosFakta{
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  max-width: 800px;
+.mitosFakta {
+  width: 100%;
+  position: relative;
   min-height: 100vh;
-  margin: 30px auto;
-  font-family: sans-serif;
-  align-items: center;
-  text-align: center;
-  /* padding: 10%; */
-}
-.mitosFakta h2{
-  color: #EE7214;
-  font-size: 2.3rem;
-  margin-bottom: -10px;
-}
-.mitosFakta .desc{
-  margin-bottom: 30px;
-  color: #575757;
-  font-weight: 700;
-  font-size: 1.5em;
-}
-.cards{
+  padding: 100px 95px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* gap: 0px; */
+  gap: 20px;
 }
-.card .card-mitos{
-  /* border: 2px solid #EE7214; */
-  border-radius: 15px;
-  margin-top: 10px;
+
+.judul-mitos {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.judul-mitos h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ee7214;
+}
+
+.judul-mitos p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.mitos-wrapper {
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #ee7214;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.mitos-wrapper .mitos-header {
   display: flex;
-  padding:5px 15px;
-  width: 100%;
-  align-items: center;
   justify-content: space-between;
+  align-items: start;
+}
+
+.mitos-wrapper .mitos-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  max-width: 90%;
+  transition: color 0.3s ease;
+}
+
+.mitos-wrapper .mitos-header img {
+  width: 32px;
+  height: 32px;
   cursor: pointer;
-  /* transition: all .3s ease-in-out; */
 }
-.card-mitos span{
-  font-weight: 700;
+
+.mitos-wrapper .penjelasan-mitos {
+  display: none;
+  transition: max-height 0.3s ease;
 }
-.card-toggle i{
-  padding: 5px 6px;
-  background-color: #EE7214;
-  color: #ffff;
-  border-radius: 55px;
+
+.mitos-wrapper .penjelasan-mitos p {
+  color: white;
+  font-size: 20px;
 }
-.card .card-mitos p{
-  text-align: left;
-  font-size: 1em;
-  font-weight: 600;
-  color: #575757;
-  
-}
-.card .card-fakta{
-  max-height: 0;
-  overflow: hidden;
-  width: 100%;
-  /* transition: max-height .3s ease-in-out; */
-  padding: 0px 15px;
-  /* height: 1000px */
-}
-.card.active .card-fakta{
-  max-height: none;
-  margin-top: 0px;
-  padding: 10px 15px;
-  /* transition: max height 0.3s ease, padding 0.5s ease;; */
-  border: 2px solid red;
-}
-.card .card-fakta p{
-  /* background-color: #235842; */
-  color: #fff;
-  /* padding: 15px; */
-  text-align: left;
-  width: 100%;
-  font-size: 1em;
-}
-.card.active{
+
+/* Saat aktif */
+.mitos-wrapper.active {
   background-color: #235842;
-  border-radius: 15px;
-  gap: 10px;
-  transition: all .5s ease-out;
-  margin: 8px 0;
-  max-height: 900px;
-}
-.card.active .card-mitos{
   border: none;
 }
-.card.active .card-mitos p{
+
+.mitos-wrapper.active .mitos-header {
+  margin-bottom: 30px;
+}
+
+.mitos-wrapper.active .mitos-header h2 {
   color: #F9E8D9;
 }
-.card.active .card-mitos .card-toggle{
-  transform: rotate(180deg);
-  color: #EE7214;
-  /* background-color: #fff; */
-    transition: all .3s ease;
 
+.mitos-wrapper.active .penjelasan-mitos {
+  display: block;
 }
 
 /* caraKerja */
-.carakerja{
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
 .caraKerja {
   padding: 90px 40px;
-  margin-top: 50px;
-  max-width: 1600px;
-  margin: auto;
-  color: #235842;
+  width: 100%;
 }
 .caraKerja h1 {
-  text-align: left;
-  font-size: 2.3em;
   color: #235842;
   margin-bottom: 60px;
-  margin-left: -25px;
-  margin-top: 0; /* Menghindari jarak atas berlebih */
+  font-size: 48px;
+  font-weight: bold;
 }
 .content {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 80px;
-  align-items: flex-start;
-  margin-left: -25px;
 }
 .image-section {
   flex: 2;
@@ -924,7 +907,6 @@ main {
 }
 .image-section img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px #ccc;
 }
@@ -934,21 +916,22 @@ main {
 .step {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 25px;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 .step img {
-  width: 50px;
+  width: 96px;
   height: auto;
 }
 .step h3 {
-  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
   color: #235842;
   font-size: 1.5em;
 }
 .step p {
   margin-top: 5px;
-  font-size: 1.3em;
+  font-size: 20px;
   color: #575757;
 }
 .icon-circle {
@@ -964,14 +947,13 @@ main {
 .alasanPlts {
   background-color: #527853;
   margin-bottom: 50px;
-  padding-bottom: 10px;
+  background-image: url("img/pattern-alasan.png");
+  background-repeat: no-repeat;
+  width: 100%;
 }
 .kenapaPlts{
-  padding: 70px 20px;
-  max-width: 1570px;
-  margin: auto;
-  margin-bottom: 50px;
-  background-color: #527853;
+  padding: 75px 90px;
+  width: 100%;
 }
 .judulPlts{
   text-align: center;
@@ -979,16 +961,15 @@ main {
 }
 .judulPlts h1{
   color: #D5F173;
-}
-.kenapaPlts h1 {
-  font-size: 2.3em;
-  color: #D5F173;
+  font-weight: bold;
+  font-size: 48px;
   margin-bottom: 10px;
   text-align: center;
 }
 .subtitle {
-  font-size: 1.5em;
-  margin-bottom: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 100px;
   text-align: center;
   color: #fff;
 }
@@ -996,27 +977,23 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: flex-start;
-  /* border: 5px solid red; */
+  align-items: center;
 }
 .benefits {
   flex: 1 1 40%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 600px;
-  /* border: 3px solid red; */
+  gap: 50px;
+  width: 400px;
 }
 .benefits .card {
   background-color: rgba(255, 255, 255, 0.15);
-  padding: 13px 10px;
-  border-radius: 10px;
+  padding: 40px;
+  border-radius: 24px;
   color: white;
   backdrop-filter: blur(2px);
   box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
   border: 2px solid #fff;
-  /* border: 3px solid red; */
-  height: 150px;
   width: 100%;
 }
 .benefits .card p{
@@ -1024,9 +1001,13 @@ main {
 }
 .benefits .card h2 {
   color: #F9E8D9;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-weight: 600;
-  font-size: 1.7em;
+  font-size: 36px;
+}
+
+.benefits .card p {
+  font-size: 24px;
 }
 .illustration {
   flex: 1 1 35%;
@@ -1034,122 +1015,6 @@ main {
 }
 .illustration img {
   width: 100%;
-  max-width: 780px;
-}
-
-
-/* MITOS FAKTA */
-.mitosFakta{
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  max-width: 1000px;
-  min-height: 100vh;
-  margin: 90px auto;
-  font-family: sans-serif;
-  align-items: center;
-  text-align: center;
-  /* padding: 10%; */
-  border: 2px solid red;
-}
-.mitosFakta h2{
-  color: #EE7214;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-.mitosFakta .desc{
-  margin-bottom: 30px;
-  color: #575757;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-.mitosFakta .cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* gap: 0px; */
-  width: 100%;
-  /* gap: -100px; */
-}
-.mitosFakta .card{
-  width: 100%;
-  max-width: 900px;
-  /* gap: -90px; */
-  /* border: 2px solid blue; */
-  /* padding-bottom: -50px; */
-  /* margin-bottom: -100px; */
-  height: 100px;
-}
-.card .card-mitos{
-  border: 2px solid #EE7214;
-  border-radius: 15px;
-  margin-top: 0px;
-  display: flex;
-  padding: 15px 15px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-.card-mitos span{
-  font-weight: 700;
-}
-.card-toggle i{
-  /* padding: 10px 10px; */
-  background-color: #EE7214;
-  color: #ffff;
-  border-radius: 500px;
-}
-.card .card-mitos p{
-  text-align: left;
-  font-size: 1em;
-  font-weight: 600;
-  color: #575757;
- 
-}
-.card .card-fakta{
-  max-height: 0;
-  overflow: hidden;
-  width: 100%;
-  /* padding: 10px 0px; */
-  padding: 0px 15px;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.card.active .card-fakta{
-  max-height: 300px;
-  margin-top: 0px;
-  padding: 0px 15px;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.card .card-fakta p{
-  /* background-color: #235842; */
-  color: #fff;
-  /* padding: 5px 15px; */
-  text-align: left;
-  width: 100%;
-  font-size: 0.95em;
-}
-.card.active{
-  background-color: #235842;
-  border-radius: 15px;
-  gap: 10px;
-  transition: all .5s ease-out;
-  /* margin: 8px 0; */
-}
-.card.active .card-mitos{
-  border: none;
-}
-.card.active .card-mitos p{
-  color: #F9E8D9;
-}
-.card.active .card-mitos .card-toggle{
-  transform: rotate(180deg);
-  color: #EE7214;
-  /* background-color: #fff; */
-    transition: all .3s ease;
-
 }
 
 

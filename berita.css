@@ -16,13 +16,14 @@
 .berita h1{
     margin-bottom: 8px;
     color: #235842;
-    font-size: 2.3em;
+    font-size: 48px;
+    font-weight: bold;
 }
 .berita p{
     margin-bottom: 40px;
     color: #575757;
-    font-weight: 700;
-    font-size: 1.5em;
+    font-weight: 600;
+    font-size: 24px;
 }
 .grid{
     display: flex;
@@ -45,11 +46,10 @@
 .card-berita {
     border-radius: 12px;
     overflow: hidden;
-    width: 330px;
+    width: 40%;
     text-align: left;
     transition: transform 0.2s;
     cursor: pointer;
-    height: 390px;
 }
 .card-berita:hover{
     transform: translateY(-4px);
