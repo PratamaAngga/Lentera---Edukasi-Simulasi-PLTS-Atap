@@ -10,7 +10,7 @@ body {
 }
 
 .sdgs-text h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   color: #235842;
   margin-bottom: 40px;
@@ -18,42 +18,116 @@ body {
 }
 
 .highlight-orange {
-  color: #f68c1f; /* Warna oranye sinar matahari */
+  color: #f68c1f;
 }
-
 .highlight-red {
-  color: #f68c1f; /* Warna langkah */
+  color: #f68c1f;
 }
-
 .highlight-sdgs {
-  color: #f68c1f; /* Warna biru SDGs */
+  color: #f68c1f;
 }
 
-.sdgs-grid {
+.sdgs-content {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+
+.sdg-icons {
+  display: flex;
+  gap: 0px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
 }
 
-.sdg-item img {
+.sdg-icon {
+  position: relative;
+  width: 150px;
+  height: 280px; /* Tambahkan tinggi agar background terlihat penuh */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* disembunyikan dulu */
+  transition: opacity 0.5s ease;
+  text-align: center;
+  padding: 0px;
+  z-index: 2;
+}
+
+/* .sdg-icon:hover .overlay-text {
+  opacity: 1; /* muncul saat hover */
+
+.sdg-icon img {
+  width: 80px; /* Perkecil ukuran icon SDG */
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  z-index: 1; /* Pastikan icon di atas background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  transition: transform 0.5s ease;
+}
+
+.sdg-icon:hover {
+  transform: scale(1.2); /* membesarkan ikon dan background */
+  z-index: 5; /* supaya di atas elemen lain */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  align-items: center; /* pindahkan ikon ke tengah secara vertikal */
+  justify-content: center;
+}
+
+.sdg-7 {
+   background-image: url('assets/img/picture\ sdg\ 7.png');
+}
+.sdg-12 {
+   background-image: url('assets/img/picture\ sdg\ 12.png');
+}
+.sdg-13 {
+   background-image: url('assets/img/picture\ sdg\ 13.png');
+}
+.sdg-15 {
+   background-image: url('assets/img/picture\ sdg\ 15.png');
 }
 
 .sdg-logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .sdg-logo img {
-  width: 120px;
-  margin-bottom: 8px;
+  width: 150px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
 }
 
 .see-all {
