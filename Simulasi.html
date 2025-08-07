@@ -30,16 +30,44 @@
             </div>
             <div class="simulasi-wrapper">
                 <div class="wrapper">
-                    <div class="simulasi-header"></div>
-                    <input type="text">
-                    <p></p>
+                    <div class="simulasi-header">
+                        <h2>Target Penggantian Daya (%)</h2>
+                    </div>
+                    <input type="text" placeholder="Ingin mengganti berapa persen konsumsi listrikmu...">
+                    <p>*Sebaiknya 50%, karena semakin besar maka semakin mahal dan jika semakin kecil maka kurang terasa manfaatnya</p>
                 </div>
                 <div class="wrapper">
-                    <div class="simulasi-header"></div>
-                    <input type="text">
+                    <div class="simulasi-header">
+                        <h2>Tagihan Listrik Bulanan (Rp)</h2>
+                    </div>
+                    <input type="text" placeholder="Masukkan rata-rata tagihan listrikmu perbulan...">
                 </div>
             </div>
-            <button></button>
+            <button class="btn-simulasi">Cek Sekarang</button>
+        </div>
+
+        <div class="hasil-simulasi">
+            <div class="judul-hasil">
+                <h1>HASIL SIMULASI</h1>
+            </div>
+            <div class="hasil">
+                <div class="wrapper-hasil">
+                    <span>50 %</span>
+                    <p>Listrik yang Diganti</p>
+                </div>
+                <div class="wrapper-hasil">
+                    <span>Rp 2,4 Jt/Tahun</span>
+                    <p>Biaya yang Dihemat</p>
+                </div>
+                <div class="wrapper-hasil">
+                    <span>21 Kg CO2/Tahun</span>
+                    <p>Emisi yang Dikurangi</p>
+                </div>
+                <div class="wrapper-hasil">
+                    <span>65 Pohon</span>
+                    <p>Biaya yang Dihemat</p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -63,6 +91,14 @@
             if (this.value) {
                 this.style.color = "black";
             }
+        });
+
+        const tombolCek = document.querySelector(".btn-simulasi");
+        const hasilSimulasi = document.querySelector(".hasil-simulasi");
+
+        tombolCek.addEventListener("click", () => {
+            hasilSimulasi.style.display = "block"; // munculkan hasil simulasi
+            hasilSimulasi.scrollIntoView({ behavior: "smooth" }); // scroll halus ke hasil
         });
     </script>
 </body>
