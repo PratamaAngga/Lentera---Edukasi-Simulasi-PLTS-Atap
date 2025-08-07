@@ -515,7 +515,7 @@ main {
   border: none;
   border-right: 1px solid white;
   flex: 1;
-  padding: 60px;
+  padding: 60px 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -553,6 +553,113 @@ main {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Hasil Cari */
+.judul {
+  font-size: 64px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 60px;
+}
+.grid{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    gap: 18px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.card{
+    border: 2.5px solid #EE7214;
+    padding: 10px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+
+}
+.card:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card .foto{
+    width: 370px;
+}
+.card h3{
+    padding: 8px 10px;
+    color: #EE7214;
+}
+.features{
+    margin-left: 9px;
+}
+.features li {
+    text-decoration: none;
+    list-style: none;
+}
+.features li img{
+    width: 15px;
+    margin-right: 4px;
+}
+.card .visit-btn{
+    width: 100%;
+    background-color: #EE7214;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.pagination a,
+.pagination .dots {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination .active {
+  background-color: #14532d; /* hijau tua */
+  color: rgb(255, 255, 255);
+  border-color: #14532d;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+
+.pagination .dots {
+  pointer-events: none;
+  color: #999;
+}
+.pagination .next{
+    /* background: #14532d; */
+    color: #333;
+}
+.pagination .next:hover{
+    color: #333;
 }
 
 /* HOME */
