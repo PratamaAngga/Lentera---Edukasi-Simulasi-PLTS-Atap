@@ -790,7 +790,91 @@ main {
 }
 
 /* mitosFakta */
+.mitosFakta {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
+.judul-mitos {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.judul-mitos h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ee7214;
+}
+
+.judul-mitos p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.mitos-wrapper {
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #ee7214;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.mitos-wrapper .mitos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.mitos-wrapper .mitos-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  max-width: 90%;
+  transition: color 0.3s ease;
+}
+
+.mitos-wrapper .mitos-header img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.mitos-wrapper .penjelasan-mitos {
+  display: none;
+  transition: max-height 0.3s ease;
+}
+
+.mitos-wrapper .penjelasan-mitos p {
+  color: white;
+  font-size: 20px;
+}
+
+/* Saat aktif */
+.mitos-wrapper.active {
+  background-color: #235842;
+  border: none;
+}
+
+.mitos-wrapper.active .mitos-header {
+  margin-bottom: 30px;
+}
+
+.mitos-wrapper.active .mitos-header h2 {
+  color: #F9E8D9;
+}
+
+.mitos-wrapper.active .penjelasan-mitos {
+  display: block;
+}
 
 /* caraKerja */
 .carakerja{
@@ -936,121 +1020,6 @@ main {
 .illustration img {
   width: 100%;
   max-width: 480px;
-}
-
-
-/* MITOS FAKTA */
-.mitosFakta{
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  max-width: 1000px;
-  min-height: 100vh;
-  margin: 90px auto;
-  font-family: sans-serif;
-  align-items: center;
-  text-align: center;
-  /* padding: 10%; */
-  border: 2px solid red;
-}
-.mitosFakta h2{
-  color: #EE7214;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-.mitosFakta .desc{
-  margin-bottom: 30px;
-  color: #575757;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-.mitosFakta .cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* gap: 0px; */
-  width: 100%;
-  /* gap: -100px; */
-}
-.mitosFakta .card{
-  width: 100%;
-  max-width: 900px;
-  /* gap: -90px; */
-  /* border: 2px solid blue; */
-  /* padding-bottom: -50px; */
-  /* margin-bottom: -100px; */
-  height: 100px;
-}
-.card .card-mitos{
-  border: 2px solid #EE7214;
-  border-radius: 15px;
-  margin-top: 0px;
-  display: flex;
-  padding: 15px 15px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-.card-mitos span{
-  font-weight: 700;
-}
-.card-toggle i{
-  /* padding: 10px 10px; */
-  background-color: #EE7214;
-  color: #ffff;
-  border-radius: 500px;
-}
-.card .card-mitos p{
-  text-align: left;
-  font-size: 1em;
-  font-weight: 600;
-  color: #575757;
- 
-}
-.card .card-fakta{
-  max-height: 0;
-  overflow: hidden;
-  width: 100%;
-  /* padding: 10px 0px; */
-  padding: 0px 15px;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.card.active .card-fakta{
-  max-height: 300px;
-  margin-top: 0px;
-  padding: 0px 15px;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.card .card-fakta p{
-  /* background-color: #235842; */
-  color: #fff;
-  /* padding: 5px 15px; */
-  text-align: left;
-  width: 100%;
-  font-size: 0.95em;
-}
-.card.active{
-  background-color: #235842;
-  border-radius: 15px;
-  gap: 10px;
-  transition: all .5s ease-out;
-  /* margin: 8px 0; */
-}
-.card.active .card-mitos{
-  border: none;
-}
-.card.active .card-mitos p{
-  color: #F9E8D9;
-}
-.card.active .card-mitos .card-toggle{
-  transform: rotate(180deg);
-  color: #EE7214;
-  /* background-color: #fff; */
-    transition: all .3s ease;
-
 }
 
 
