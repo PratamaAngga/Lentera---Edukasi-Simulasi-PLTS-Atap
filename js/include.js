@@ -88,5 +88,8 @@ window.addEventListener("scroll", function () {
     
 //     card.classList.toggle("active");
 
-
-
+//     if (arrow) {
+//       arrow.classList.toggle("rotate");
+//     }
+//   });
+// });
