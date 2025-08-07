@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
           link.classList.add("active");
         }
       });
+      const tombolCari = document.getElementById("search-button");
+      if (tombolCari) {
+        tombolCari.addEventListener("click", () => {
+          window.location.href = "HasilCari.html";
+        });
+      }
     });
 
   // Load Banner
@@ -86,3 +92,4 @@ cards.forEach((card) => {
     }
   });
 });
+
