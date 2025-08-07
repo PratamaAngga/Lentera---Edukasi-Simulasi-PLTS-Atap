@@ -398,6 +398,151 @@ main {
 .content-simulasi {
   margin-left: 210px;
   width: calc(100% -  420px);
+  margin-bottom: 78px;
+}
+
+.wrapper {
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.simulasi-header {
+  display: inline-block;
+  padding: 8px 100px 8px 20px;
+  border: none;
+  border-bottom: 2px solid #ee7214;
+}
+
+.simulasi-header h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dropdown-kota {
+  width: 100%;
+  margin: 30px 0 16px 20px;
+  display: block;
+  padding: 24px;
+  color: #868e96;
+  border: 1px solid #527853;
+  border-radius: 20px;
+  font-size: 1em;
+  appearance: none;
+  background-image: url("icon/chevron-down-secondary.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dropdown-kota:focus {
+  outline: none;
+  border-color: #527853;
+}
+
+.simulasi-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 27px;
+}
+
+.wrapper input {
+  display: block;
+  width: 100%;
+  margin: 30px 0 16px 20px;
+  padding: 24px;
+  border: 1px solid #527853;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+.wrapper input:focus {
+  outline: none;
+  border: 1px solid #527853;
+}
+
+.wrapper p {
+  font-size: 1em;
+  color: #DC3545;
+  max-width: 480px;
+}
+
+.btn-simulasi {
+  padding: 18px;
+  background-color: #ee7214;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 37px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.hasil-simulasi {
+  width: calc(100% - 360px);
+  margin-bottom: 150px;
+  margin-left: 180px;
+  display: none;
+}
+
+.judul-hasil {
+  padding: 26px 0;
+  border-top: 1px solid #ee7214;
+  border-bottom: 1px solid #ee7214;
+  width: 1000px;
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.hasil {
+  padding: 54px 64px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12.5px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 52px;
+  display: flex;
+}
+
+.wrapper-hasil {
+  background-color: #235842;
+  border: none;
+  border-right: 1px solid white;
+  flex: 1;
+  padding: 60px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper-hasil:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.wrapper-hasil:last-child {
+  border-radius: 0 20px 20px 0;
+  border: none;
+}
+
+.wrapper-hasil span {
+  font-size: 38px;
+  font-weight: bold;
+  color: #D5F173;
+}
+
+.wrapper-hasil p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
 }
 
 .footer {
@@ -408,6 +553,113 @@ main {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Hasil Cari */
+.judul {
+  font-size: 64px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 60px;
+}
+.grid{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    gap: 18px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.card{
+    border: 2.5px solid #EE7214;
+    padding: 10px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+
+}
+.card:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card .foto{
+    width: 370px;
+}
+.card h3{
+    padding: 8px 10px;
+    color: #EE7214;
+}
+.features{
+    margin-left: 9px;
+}
+.features li {
+    text-decoration: none;
+    list-style: none;
+}
+.features li img{
+    width: 15px;
+    margin-right: 4px;
+}
+.card .visit-btn{
+    width: 100%;
+    background-color: #EE7214;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.pagination a,
+.pagination .dots {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination .active {
+  background-color: #14532d; /* hijau tua */
+  color: rgb(255, 255, 255);
+  border-color: #14532d;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+
+.pagination .dots {
+  pointer-events: none;
+  color: #999;
+}
+.pagination .next{
+    /* background: #14532d; */
+    color: #333;
+}
+.pagination .next:hover{
+    color: #333;
 }
 
 /* HOME */

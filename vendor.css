@@ -13,21 +13,11 @@ body{
     height: 100vh;
     
 }
-.banner{
-    width: 100%;
-    max-width: unset;
-    object-fit: cover;
-    min-height: 250px;
-    padding: 60px 50px;
-    overflow: visible;
-    position: relative;
-    margin-top: 150px;
-    margin-bottom: -30px;
-    /* margin: 50px 50px 0px 50px; */
+
+.vendor {
+    padding-top: 150px;
 }
-.banner img{
-    width: 100%;
-}
+
 .line{
     width: 90%;
     border: 1px solid #527853;
@@ -108,6 +98,9 @@ body{
   text-decoration: none;
   color: #333;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .pagination .active, .next {
