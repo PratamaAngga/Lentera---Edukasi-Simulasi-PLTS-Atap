@@ -21,11 +21,38 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+  function updateBannerText() {
+  const currentPage = document.body.dataset.page;
+
+  const h1 = document.querySelector("#banner .banner h1");
+  const p = document.querySelector("#banner .banner p");
+
+  if (!h1 || !p) return;
+
+  if (currentPage === "vendor") {
+    h1.textContent = "Temukan Vendormu Disini";
+    p.textContent =
+      "Temukan penyedia solar panel yang cocok untukmu dan wujudkan rumah hemat energi!";
+  } else if (currentPage === "forum") {
+    h1.textContent = "Obrolan Lentera";
+    p.textContent =
+      "Dengarkan kisah para Sahabat Lentera, dan ajukan pertanyaanmu di ruang diskusi komunitas.";
+  } else if (currentPage === "simulasi") {
+    h1.textContent = "Simulasikan Hematmu";
+    p.textContent =
+      "Lihat berapa banyak cahaya matahari bisa gantikan listrikmu, plus estimasi biaya dan dampak lingkungannya.";
+  }
+  // tambahkan kondisi lainnya sesuai halaman
+}
+
   // Load Banner
   fetch("components/banner.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("banner").innerHTML = data;
+
+      // Setelah banner dimuat, baru ubah teks
+    updateBannerText();
     });
 
   // Load Footer
@@ -34,38 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
     });
-
-  // Load hero
-  fetch("hero.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("hero").innerHTML = data;
-    });
-
-  // Load cara kerja
-  fetch("cobaCaraKerja.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("caraKerja").innerHTML = data;
-    });
-
-  // Load alasan plts
-  fetch("kenapaPLTS.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("alasanPlts").innerHTML = data;
-    });
-
-  // Load Mitos fakta
-  fetch("mitosFakta.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("MitosFakta").innerHTML = data;
-    includeHtml();
-    });
-
-    includeHtml();
-  // Load alasan
 });
 
 window.addEventListener("scroll", function () {
