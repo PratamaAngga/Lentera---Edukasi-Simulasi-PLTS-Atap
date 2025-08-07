@@ -791,7 +791,7 @@ main {
 }
 .infografis {
   width: calc(100% - 360px);
-  margin-top: -900px;
+  margin-top: -130px;
   margin-bottom: 300px;
   margin-left: 180px;
   position: absolute;

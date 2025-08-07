@@ -64,7 +64,6 @@
 }
 .card-info h3{
     font-size: 1.5em;
-    padding: -10px;
     margin-left: 0px;
     margin-bottom: 10px;
 }
@@ -91,7 +90,7 @@
     transform: scale(1.01);
 }
 .highlight img{
-    max-width: 440px;
+    max-width: 550px;
 }
 .highlight .card-info{
     position: absolute;
