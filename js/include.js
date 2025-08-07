@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     includeHtml();
     });
 
+    includeHtml();
   // Load alasan
 });
 
@@ -77,19 +78,18 @@ window.addEventListener("scroll", function () {
 });
 
 // mitos fakta
-const cards = document.querySelectorAll(".card");
+// const cards = document.querySelectorAll(".card");
 
-cards.forEach((card) => {
-  const mitos = card.querySelector(".card-mitos");
-  const arrow = card.querySelector(".arrow-toggle");
+// cards.forEach((card) => {
+//   const mitos = card.querySelector(".card-mitos");
+//   const arrow = card.querySelector(".arrow-toggle");
 
-  mitos.addEventListener("click", () => {
+//   mitos.addEventListener("click", () => {
     
-    card.classList.toggle("active");
+//     card.classList.toggle("active");
 
-    if (arrow) {
-      arrow.classList.toggle("rotate");
-    }
-  });
-});
-
+//     if (arrow) {
+//       arrow.classList.toggle("rotate");
+//     }
+//   });
+// });

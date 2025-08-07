@@ -1,6 +1,4 @@
-*{
-  box-sizing: border-box;
-}
+
 .mitosFakta{
   display: flex;
   flex-direction: column;
