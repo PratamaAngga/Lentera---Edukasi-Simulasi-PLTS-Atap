@@ -807,6 +807,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-bottom: -50px;
 }
 
 .judul-mitos {
@@ -816,13 +817,13 @@ main {
 }
 
 .judul-mitos h1 {
-  font-size: 64px;
+  font-size: 55px;
   font-weight: bold;
   color: #ee7214;
 }
 
 .judul-mitos p {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   color: #333;
 }
@@ -843,7 +844,7 @@ main {
 }
 
 .mitos-wrapper .mitos-header h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   color: #333;
   max-width: 90%;
@@ -888,6 +889,7 @@ main {
 .caraKerja {
   padding: 90px 40px;
   width: 100%;
+  margin-bottom: 70px;
 }
 .caraKerja h1 {
   color: #235842;
