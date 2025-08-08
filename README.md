@@ -5,7 +5,8 @@ Lentera - Website Edukasi dan Simulasi PLTS Atap
 1. Pastikan sudah menginstal **VS Code** dan ekstensi **Live Server**.
 2. Buka folder repository di VS Code.
 3. Buka `index.html` dan jalankan menggunakan Live Server.
-4. Website siap digunakan.
+4. Pastikan device anda memakai resolusi 1920px dan skala display 100%
+5. Website siap digunakan.
 
 ## Penjelasan struktur folder dan fungsi:
 
